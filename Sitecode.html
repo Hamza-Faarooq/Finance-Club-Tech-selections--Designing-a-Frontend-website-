@@ -1,0 +1,190 @@
+<!DOCTYPE html> 
+
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initialscale=1.0"> 
+  <title>Your Portfolio</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file --> 
+  <style> 
+
+    /* Additional CSS styles */ 
+
+    .skills-section, .achievements-section { 
+      text-align: center; /* Align the content to the center */ 
+    } 
+    .skill-cards, .achievement-cards { 
+      display: flex;       flex-wrap: wrap; 
+      justify-content: center; /* Center the cards horizontally */ 
+    } 
+    .skill-card, .achievement-card {       width: calc(33.33% - 40px);       margin: 20px;       background-color: #f9f9f9;       padding: 20px;       border-radius: 10px;       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);       transition: background-color 0.3s ease; 
+    } 
+
+ 
+
+    .skill-card:hover, .achievement-card:hover {       background-color: #e0e0e0; /* Change background color on hover */ 
+    } 
+
+    .skill-card h3, .achievement-card h3 {       color: indigo; /* Indigo color for skill/achievement titles */ 
+
+    } 
+
+    .project-card h3 { 
+      color: #808080; /* Grey color for project titles */ 
+    } 
+    .footer {   font-family: 'Times New Roman', Times, serif;       font-size: 12px;       text-align: center;       margin-top: 20px; 
+    } 
+    .contact-me { 
+      font-family: 'Californian FB', serif;       font-size: 18px;       font-weight: bold;       color: #006400; /* Dark green color */       margin-left: 20px; 
+    } 
+  </style> 
+</head> 
+<body> 
+  <header> 
+    <nav class="navbar"> 
+      <div class="logo"> 
+        <img src="https://i.ibb.co/SVz1ySv/example-image.jpg" alt="Portfolio Logo"> 
+      </div> 
+      <ul class="nav-links"> 
+        <li><a href="#intro-section">Introduction</a></li> 
+        <li><a href="#skills-section">Skills & Achievements</a></li> 
+        <li><a href="#my-projects-section">My Projects</a></li> 
+        <li><a href="#contact-section">Contact Me</a></li> 
+      </ul> 
+    </nav> 
+  </header> 
+
+  <!-- INTRO SECTION --> 
+
+  <section id="intro-section" class="intro-section"> 
+    <div class="intro-content"> 
+      <div class="intro-left"> 
+        <h1>Hello, I'm <span style="font-style: italic; color: 
+#00008B;">Hamza</span>! Welcome to this page..</h1> 
+        <p class="tagline" style="font-weight: bold;">I am a web developer from IIT KHARAGPUR. </p> 
+        <a href="#contact-section" class="contact-button">Contact Me</a> 
+      </div> 
+      <div class="intro-right"> 
+        <img src="https://i.ibb.co/9Wf3fJy/profile-photo.jpg" alt="Profile Photo"> 
+      </div> 
+    </div> 
+  </section> 
+ 
+
+  <!-- SKILLS & ACHIEVEMENTS SECTION --> 
+  <section id="skills-section" class="skills-section"> 
+   <h2>Skills & Achievements</h2> 
+    <div class="skill-cards"> 
+      <!-- Skill Card 1 --> 
+      <div class="skill-card"> 
+        <h3>Python</h3> 
+        <p>Proficient in Python programming language.</p> 
+        <h3>HTML</h3> 
+        <p>Skilled in creating web pages using HTML.</p> 
+      </div> 
+
+      <!-- Skill Card 2 --> 
+
+      <div class="skill-card"> 
+        <h3>CSS</h3> 
+        <p>Proficient in styling web pages using CSS.</p> 
+        <h3>Astrophysics</h3> 
+        <p>Quite interested in exploring the dynamics of Cosmos.</p> 
+      </div> 
+      <!-- Skill Card 3 --> 
+      <div class="skill-card"> 
+        <h3>Graph Theory</h3> 
+        <p>Learning about the basics of graph theory.</p> 
+      </div> 
+
+      <!-- Repeat for other skills --> 
+    </div> 
+  </section> 
+
+  <!-- ACHIEVEMENTS SECTION --> 
+
+  <section id="achievements-section" class="achievements-section"> 
+    <h2>Achievements</h2> 
+    <div class="achievement-cards"> 
+
+      <!-- Achievement Card 1 --> 
+      <div class="achievement-card"> 
+        <h3>JEE ADVANCED</h3> 
+        <p>Top 1%</p> 
+      </div> 
+
+      <!-- Achievement Card 2 --> 
+
+      <div class="achievement-card"> 
+        <h3>JEE MAINS</h3> 
+        <p>AIR 3071</p> 
+      </div> 
+
+      <!-- Achievement Card 3 --> 
+      <div class="achievement-card"> 
+        <h3>IAAC 2023</h3> 
+        <p>SILVER HONOUR</p> 
+      </div> 
+
+      <!-- Repeat for other achievements --> 
+    </div> 
+  </section> 
+
+ 
+  <!-- MY PROJECTS SECTION --> 
+  <section id="my-projects-section" class="my-projects-section"> 
+    <h2>My Projects</h2>
+    <div class="project-cards"> 
+
+
+      <!-- Project Card 1 --> 
+      <div class="project-card"> 
+
+        <img src="https://i.ibb.co/mCtk97Y/project1.jpg" alt="Project 1"> 
+        <h3>Cricket Analysis with ML</h3> <!-- Project title --> 
+       <button class="visit-button">Visit-></button> 
+      </div> 
+
+      <!-- Project Card 2 --> 
+      <div class="project-card"> 
+        <img src="https://i.ibb.co/cN28t27/project2.jpg" alt="Project 2"> 
+        <h3>Weather Forecasting using Python</h3> <!-- Project title --> 
+        <button class="visit-button">Visit-></button> 
+      </div> 
+
+      <!-- Project Card 3 --> 
+      <div class="project-card"> 
+        <img src="https://i.ibb.co/LJYXkvG/project3.jpg" alt="Project 3"> 
+        <h3>Crypto Data Analysis using JSON</h3> <!-- Project title --> 
+        <button class="visit-button">Visit-></button> 
+      </div> 
+
+      <!-- Repeat this structure for the remaining project cards --> 
+    </div> 
+  </section> 
+
+  <!-- CONTACT SECTION --> 
+
+  <section id="contact-section" class="contact-section"> 
+    <div class="contact-form-container"> 
+      <h2 class="contact-me">Contact Me</h2> 
+      <form id="contact-form"> 
+        <input type="text" id="name" name="name" placeholder="Your Name" required> 
+        <input type="email" id="email" name="email" placeholder="Your Email" required> 
+        <input type="date" id="appointment-date" name="appointment-date" required> 
+        <textarea id="message" name="message" placeholder="Your 
+Message" required></textarea> 
+        <button type="submit">Submit</button> 
+      </form> 
+    </div> 
+  </section> 
+
+
+  <!-- FOOTER SECTION --> 
+  <div class="footer"> 
+    <p>This website was created in March 2024.</p> 
+  </div> 
+  <script src="script.js"></script> <!-- Link to your JavaScript file --> 
+</body> 
+</html> 
+
