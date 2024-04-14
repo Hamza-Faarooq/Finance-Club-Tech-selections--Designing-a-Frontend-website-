@@ -1,0 +1,57 @@
+/* General styles */ body { 
+
+  font-family: Arial, sans-serif;   margin: 0;   padding: 0; } .navbar {   background-color: #333; 
+  color: #fff;   display: flex;   justify-content: space-between;   align-items: center;   position: fixed;   top: 0;   left: 0; 
+  width: 100%;   z-index: 1000;   padding: 10px 20px; 
+} .logo img { 
+  height: 50px; /* Adjust the height of the logo as needed */ 
+} .nav-links {   list-style: none;   margin: 0;   padding: 0;   display: flex; } .nav-links li {   margin-right: 20px; } .nav-links a {   color: #fff;   text-decoration: none;   transition: color 0.3s ease; } 
+.nav-links a:hover { 
+  color: #ff9900; /* Change color on hover */ 
+} .intro-section {   padding: 100px 0;   text-align: center; } .intro-content {   display: flex;   justify-content: center;   align-items: center; 
+} .intro-left {   flex: 1; } 
+.intro-left h1 { 
+  font-size: 2em; /* Double the size */   font-weight: bold; 
+  color: #00008B; /* Dark blue color */   font-family: 'Calisto MT', serif; /* Change font family */ 
+} 
+
+.intro-left .tagline {   font-size: 2em; /* Double the size */   font-weight: bold; 
+  font-family: 'Calisto MT', serif; /* Change font family */ 
+} .intro-right {   flex: 1; 
+} 
+.intro-right img {   border-radius: 50%; /* Round profile photo */ 
+} 
+.my-projects-section {   padding: 100px 0;   text-align: center; 
+} 
+.my-projects-section h2 {   color: #006400; /* Dark green color */   font-family: 'Calisto MT', serif; /* Change font family */ 
+} 
+.project-cards {   display: flex;   flex-wrap: wrap;   justify-content: space-around; 
+} 
+.project-card {   width: 30%; /* Adjust card width as needed */   margin-bottom: 30px;   background-color: #f9f9f9;   padding: 20px;   border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);   transition: background-color 0.3s ease; 
+} 
+
+.project-card:hover { 
+  background-color: #e0e0e0; /* Change background color on hover */ } 
+.project-card img {   width: 100%;   border-radius: 5px; 
+} 
+
+.contact-section { 
+  background-image: url('background-image.jpg'); /* Add background image 
+*/   background-size: cover;   background-position: center;   color: #fff; 
+  padding: 100px 0;   text-align: center; 
+} 
+
+.contact-form-container { 
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */   padding: 20px;   border-radius: 10px; 
+} 
+.contact-form-container h2 {   margin-bottom: 20px;   font-family: 'Calisto MT', serif; /* Change font family */ 
+} 
+
+.contact-form-container input, .contact-form-container textarea {   width: 100%;   margin-bottom: 20px;   padding: 10px;   border: none;   border-radius: 5px; 
+  font-family: 'Calisto MT', serif; /* Change font family */ 
+}
+.contact-form-container input[type="submit"] {   background-color: #ff9900;   color: #fff;   border: none;   padding: 10px 20px;   border-radius: 5px;   cursor: pointer;   font-family: 'Calisto MT', serif; /* Change font family */ 
+} 
+.contact-form-container input[type="submit"]:hover {   background-color: #ff6600; /* Change button color on hover */ 
+} 
